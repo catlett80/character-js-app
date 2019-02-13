@@ -19,5 +19,3 @@ var Venusaur = {
   Height: 2,
   Types: 'Grass', 'Poison'
 }
-
-console.log(name);
