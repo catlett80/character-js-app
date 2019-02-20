@@ -1,12 +1,19 @@
 
 
-var repository = [];
+
+  var pokemonRepository = (function pokemon() {
+    var data = {
+      name: 'Bulbasaur',
+      height: '0.7',
+      types: ['Grass', 'Poison']
+
+
+    }
+  }
 
 
 var Bulbasaur = {
-  name: 'Bulbasaur',
-  height: '0.7',
-  types: ['Grass', 'Poison']
+
 };
 
 var Ivysaur = {
@@ -19,7 +26,9 @@ var Venusaur = {
   name: 'Venusaur',
   height: '2',
   types: ['Grass', 'Poison']
+  };
 };
+
 
 repository.push(Bulbasaur);
 repository.push(Ivysaur);
