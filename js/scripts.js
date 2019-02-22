@@ -1,19 +1,17 @@
 
 
+var pokemonRepository = (function pokemon() {
 
-  var pokemonRepository = (function pokemon() {
-
-    var repository = [
-      {
+  var repository = [
+    {
       name: 'Bulbasaur',
       height: '0.7',
       types: ['Grass', 'Poison']
-    }
+  }
 ];
 
-function add(repository){
-  repository.push(Ivysaur);
-  repository.push(Vensaur);
+function add(pokemon){
+  repository.push(pokemon);
 };
 
 var Ivysaur = {
@@ -28,6 +26,9 @@ var Venusaur = {
   types: ['Grass', 'Poison']
 };
 
+add(Ivysaur);
+add(Venusaur);
+
 console.log(repository)
 
 function getAll(){
@@ -41,9 +42,6 @@ return {
 
 })();
 
-
-repository.forEach(var i = 0; i < repository.length; i++){
-  var message =""
-  if(repository[i].height>1){
-    message= "Wow that's big!"
-  }
+pokemonRepository.getAll().forEach(function(pokemon) {
+    document.write('<h1>Name: ' + pokemon.name + '<h1>');
+})
