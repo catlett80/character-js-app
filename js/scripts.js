@@ -2,6 +2,15 @@
 
 var pokemonRepository = (function pokemon() {
 
+addListItem(){
+  name: 'Bulbasaur',
+  height: '0.7',
+  types: ['Grass', 'Poison']
+}
+
+var newElement = document.createElement();
+newElement.setAttribute ('name:Ivysaur', 'height:1', 'types: Grass Poison')
+
   var repository = [
     {
       name: 'Bulbasaur',
@@ -43,5 +52,4 @@ return {
 })();
 
 pokemonRepository.getAll().forEach(function(pokemon) {
-    document.write('<h1>Name: ' + pokemon.name + '<h1>');
 })
