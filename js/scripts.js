@@ -2,15 +2,14 @@
 
 var pokemonRepository = (function pokemon() {
 
-addListItem(){
-  name: 'Bulbasaur',
-  height: '0.7',
-  types: ['Grass', 'Poison']
-}
+function addListItem(new_element){
 
-var newElement = document.createElement();
+var $element = document.createElement('li');
+
+;
+
 newElement.setAttribute ('name:Ivysaur', 'height:1', 'types: Grass Poison')
-
+}
   var repository = [
     {
       name: 'Bulbasaur',
